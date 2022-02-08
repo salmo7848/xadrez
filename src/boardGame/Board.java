@@ -34,4 +34,9 @@ public class Board {
 	public Peace piece(Position position) {
 		return piece[position.getRow()][position.getColumns()];
 	}
+	
+	public void pleacePiece(Peace piec, Position position) {
+		piece[position.getRow()][position.getColumns()] = piec;
+		piec.position = position;
+	}
 }
